@@ -1,0 +1,102 @@
+[submodule "libs/auto-complete"]
+	path = libs/auto-complete
+	url = https://github.com/azer/auto-complete.git
+[submodule "libs/coffee-mode"]
+	path = libs/coffee-mode
+	url = https://github.com/azer/coffee-mode.git
+[submodule "libs/dash"]
+	path = libs/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "libs/expand-region"]
+	path = libs/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+[submodule "libs/jade-mode"]
+	path = libs/jade-mode
+	url = https://github.com/brianc/jade-mode.git
+[submodule "libs/js2-mode"]
+	path = libs/js2-mode
+	url = https://github.com/mooz/js2-mode.git
+[submodule "libs/js2-refactor"]
+	path = libs/js2-refactor
+	url = https://github.com/magnars/js2-refactor.el.git
+[submodule "libs/markdown-mode"]
+	path = libs/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "libs/mark-multiple"]
+	path = libs/mark-multiple
+	url = https://github.com/magnars/mark-multiple.el.git
+[submodule "libs/multiple-cursors"]
+	path = libs/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "libs/powerline"]
+	path = libs/powerline
+	url = https://github.com/milkypostman/powerline.git
+[submodule "libs/smart-forward"]
+	path = libs/smart-forward
+	url = https://github.com/magnars/smart-forward.el.git
+[submodule "libs/smex"]
+	path = libs/smex
+	url = https://github.com/nonsequitur/smex.git
+[submodule "libs/zencoding"]
+	path = libs/zencoding
+	url = https://github.com/rooney/zencoding.git
+[submodule "libs/yasnippet"]
+	path = libs/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "libs/popup"]
+	path = libs/popup
+	url = https://github.com/auto-complete/popup-el.git
+[submodule "libs/npm"]
+	path = libs/npm
+	url = https://github.com/azer/npm.el.git
+[submodule "libs/relative-line-numbers"]
+	path = libs/relative-line-numbers
+	url = https://github.com/azer/linum-relativenumber.git
+[submodule "libs/clojure-mode"]
+	path = libs/clojure-mode
+	url = https://github.com/clojure-emacs/clojure-mode.git
+[submodule "libs/gocode"]
+	path = libs/gocode
+	url = https://github.com/nsf/gocode.git
+[submodule "libs/go-errcheck"]
+	path = libs/go-errcheck
+	url = https://github.com/dominikh/go-errcheck.el.git
+[submodule "libs/slim"]
+	path = libs/slim
+	url = https://github.com/slim-template/emacs-slim.git
+[submodule "libs/fiplr"]
+	path = libs/fiplr
+	url = https://github.com/grizzl/fiplr.git
+[submodule "libs/grizzl"]
+	path = libs/grizzl
+	url = https://github.com/grizzl/grizzl.git
+[submodule "libs/web-mode"]
+	path = libs/web-mode
+	url = https://github.com/fxbois/web-mode.git
+[submodule "libs/flycheck"]
+	path = libs/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule "libs/magit"]
+	path = libs/magit
+	url = git://github.com/magit/magit.git
+[submodule "libs/solarized"]
+	path = libs/solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "libs/solarized-theme"]
+	path = libs/solarized-theme
+	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "libs/go-mode"]
+	path = libs/go-mode
+	url = https://github.com/dominikh/go-mode.el.git
+[submodule "libs/helm"]
+	path = libs/helm
+	url = https://github.com/emacs-helm/helm.git
+[submodule "libs/async"]
+	path = libs/async
+	url = https://github.com/jwiegley/emacs-async.git
+[submodule "libs/s"]
+	path = libs/s
+	url = https://github.com/magnars/s.el.git
+[submodule "libs/git-grep"]
+	path = libs/git-grep
+	url = https://github.com/yasuyk/helm-git-grep.git
