@@ -1,9 +1,6 @@
 [submodule "libs/auto-complete"]
 	path = libs/auto-complete
 	url = https://github.com/azer/auto-complete.git
-[submodule "libs/coffee-mode"]
-	path = libs/coffee-mode
-	url = https://github.com/azer/coffee-mode.git
 [submodule "libs/dash"]
 	path = libs/dash
 	url = https://github.com/magnars/dash.el.git
@@ -55,12 +52,6 @@
 [submodule "libs/clojure-mode"]
 	path = libs/clojure-mode
 	url = https://github.com/clojure-emacs/clojure-mode.git
-[submodule "libs/gocode"]
-	path = libs/gocode
-	url = https://github.com/nsf/gocode.git
-[submodule "libs/go-errcheck"]
-	path = libs/go-errcheck
-	url = https://github.com/dominikh/go-errcheck.el.git
 [submodule "libs/slim"]
 	path = libs/slim
 	url = https://github.com/slim-template/emacs-slim.git
@@ -85,12 +76,6 @@
 [submodule "libs/solarized-theme"]
 	path = libs/solarized-theme
 	url = https://github.com/sellout/emacs-color-theme-solarized.git
-[submodule "libs/go-mode"]
-	path = libs/go-mode
-	url = https://github.com/dominikh/go-mode.el.git
-[submodule "libs/helm"]
-	path = libs/helm
-	url = https://github.com/emacs-helm/helm.git
 [submodule "libs/async"]
 	path = libs/async
 	url = https://github.com/jwiegley/emacs-async.git
