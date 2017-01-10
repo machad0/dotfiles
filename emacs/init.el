@@ -30,9 +30,7 @@
     (if (file-readable-p filename)
         (load-file filename))))
 
-(push "~/.emacs.d/evil" load-path)
-(require 'evil)
-;;(evil-mode 1)
+(elpy-enable)
 
 (add-load-path "")
 (add-load-path "lib")
