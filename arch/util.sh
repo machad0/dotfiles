@@ -5,5 +5,6 @@ for i in ${tools[@]}; do
 done
 
 source ~/.zshrc
-source ../nodejs/npm_dependencies.sh
+source ./tools/defaults.sh
+source ./nodejs/npm_dependencies.sh
 

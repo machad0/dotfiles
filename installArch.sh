@@ -3,8 +3,8 @@ sudo pacman-mirrors --country all
 sudo pacman -Syy
 
 archInstall() {
-  yaourt --S --needed --noconfirm
+  yaourt -Sy --needed --noconfirm
 }
 
-source ../arch/util.sh
+source ./arch/util.sh
 source ~/.zshrc
