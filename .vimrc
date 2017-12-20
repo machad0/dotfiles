@@ -2,54 +2,50 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
+  call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'vim-syntastic/syntastic'
-    " Plugin 'w0rp/ale'
     Bundle 'kien/ctrlp.vim'
     Plugin 'scrooloose/nerdtree'
     Plugin 'sheerun/vim-polyglot'
     Plugin 'tpope/vim-commentary.git'
-    Plugin 'mhartington/oceanic-next'    
+    Plugin 'whatyouhide/vim-gotham'
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'othree/yajs.vim'    
     Plugin 'othree/javascript-libraries-syntax.vim'
     Plugin 'Yggdroot/indentLine'
+    Plugin 'tpope/vim-surround'
+    Plugin 'prettier/vim-prettier', {
+    \ 'do': 'yarn install',
+    \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 call vundle#end()
 
-"COLORSCHEME"
 set t_Co=256
 set background=dark
-colorscheme OceanicNext
+colorscheme gotham256
 syntax enable
 set ruler
-let g:lightline = { 'colorscheme': 'oceanicnext' }
 
+let g:prettier#autoformat = 0
 
-if (has("termguicolors"))
-set termguicolors
-endif
-
-
-"FONTS AND ENCODING"
 set encoding=utf8
 
-"AIRLINE CONFIG
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
+
 let g:airline_powerline_fonts=1
-let g:airline_theme='oceanicnext'
+let g:gotham_airline_emphasised_insert = 0
 
-"JAVASCRIPT LIBRARIES"
-let g:used_javascript_libs = 'underscore,angularjs,angularui,socketio,express'
+let g:used_javascript_libs = 'underscore,socketio,express,ramda,chai,react,jasmine'
 
-"EXTRA CONFIG"
 set backspace=indent,eol,start
 set clipboard=unnamed
-set shiftwidth=2 " Indentation 2 spaces
+set shiftwidth=2 
 set tabstop=2
-set expandtab " Conrert tabs to spaces
+set expandtab 
 filetype plugin indent on
-set number " Show line number
+set number 
 set numberwidth=3
 let g:indentLine_color_term = 239
 set showcmd
@@ -64,28 +60,18 @@ set nowritebackup
 set noswapfile
 set fileformats=unix,dos,mac
 
-"Trying to speed up vim"
 set lazyredraw
 set synmaxcol=128
 
-" Enable mouse
-if has('mouse')
-    set mouse=a
-endif
-
-
-" CtrlP
-set wildignore+=*/.git/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_custom_ignore = {
  	\ 'dir':  'node_modules\|DS_Store\|git\|bower_components',
  	\ 'file': '\v\.(exe|so|dll)$',
  	\ }
 
-" Show the filename in the window titlebar
 set title
 autocmd StdinReadPre * let s:std_in=1
 autocmd vimenter * NERDTree
-" Jump to the main window.
 autocmd VimEnter * wincmd p
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -94,7 +80,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" Set Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
