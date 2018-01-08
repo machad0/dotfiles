@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
-  call vundle#begin()
+call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
     Plugin 'vim-syntastic/syntastic'
     Bundle 'kien/ctrlp.vim'
@@ -15,7 +15,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
     Plugin 'othree/yajs.vim'    
     Plugin 'othree/javascript-libraries-syntax.vim'
     Plugin 'Yggdroot/indentLine'
-    Plugin 'tpope/vim-surround'
+    Plugin 'jiangmiao/auto-pairs'
     Plugin 'prettier/vim-prettier', {
     \ 'do': 'yarn install',
     \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
@@ -34,7 +34,7 @@ set encoding=utf8
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql PrettierAsync
 
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts= 1
 let g:gotham_airline_emphasised_insert = 0
 
 let g:used_javascript_libs = 'underscore,socketio,express,ramda,chai,react,jasmine'
